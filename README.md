@@ -36,6 +36,22 @@ npm run dev
 
 > Not: Backend varsayılan olarak `localhost:5000` portunda çalışır. Gerekirse `backend/server.js` dosyasından portu değiştirebilirsiniz.
 
+Veritabanı: MongoDB
+Uygulama MongoDB veritabanı ile çalışmaktadır. Bağlantı için aşağıdaki adımları takip edin:
+
+MongoDB Kurulumu
+MongoDB Download Center üzerinden MongoDB Community Edition’ı indirin ve kurun.
+
+MongoDB Compass uygulamasını indirerek veritabanınızı görsel olarak da yönetebilirsiniz.
+
+MongoDB Bağlantısı
+.env dosyasına aşağıdaki satırı ekleyin:
+
+env
+MONGO_URI=mongodb://localhost:27017/healtharea
+Not: MONGO_URI değeri, MongoDB Compass veya terminal üzerinden çalıştırdığınız bağlantı URI’sine göre değişebilir.
+
+
 ## Kullanım
 - Uygulamayı başlattıktan sonra tarayıcınızda `http://localhost:5173` adresine gidin.
 - Kayıt olun veya giriş yapın.
